@@ -29,7 +29,7 @@ module.exports = (robot) =>
         emit = 'Today\'s Panera Bread soups are:' + "\n";
         soups = []
 
-        for article in $('article')
+        for article in $('article:not(.promo-tile)')
             soups.push(' · ' + $(article).find('.item-name').text())
 
         emit += soups.join("\n")
