@@ -6,6 +6,7 @@
 #   "moment": "2.0.x"
 #
 # Commands:
+#   hubot panera - Pulls the soup Panera Bread has today
 #   hubot panerabread - Pulls the soup Panera Bread has today
 #
 # Author:
@@ -18,7 +19,7 @@ baseUrl = 'https://www.panerabread.com'
 today = moment().format('dddd').toLowerCase()
 
 module.exports = (robot) =>
-  robot.respond /panerabread/i, (msg) ->
+  robot.respond /panera(bread)?$/i, (msg) ->
     msg.http(baseUrl + '/content/panerabread/en_us/lookups/tabs/soups-' + today + '.tabview.html')
       .get() (err, res, body) ->
         return msg.send "Sorry, Panera bread doesn't like you. ERROR:#{err}" if err
