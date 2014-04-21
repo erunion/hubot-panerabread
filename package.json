@@ -1,6 +1,6 @@
 {
   "name": "hubot-panerabread",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "description": "A Hubot plugin to tell you what soup Panera Bread has today.",
   "keywords": [
