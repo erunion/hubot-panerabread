@@ -7,7 +7,6 @@ A [Hubot](https://github.com/github/hubot) plugin to tell you what soup [Panera 
     hubot panerabread - Pulls todays soup
 
 ### Installation
-1. Edit `package.json` and add `hubot-panerabread` as a dependency.
+1. `npm install hubot-panerabread --save`
 2. Add `"hubot-panerabread"` to your `external-scripts.json` file.
-3. `npm install`
-4. Reboot Hubot.
+3. Reboot Hubot.
