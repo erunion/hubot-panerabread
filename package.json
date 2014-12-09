@@ -22,7 +22,7 @@
     "type": "git",
     "url": "https://github.com/jonursenbach/hubot-panerabread.git"
   },
-  "main": "./src/panerabread",
+  "main": "index.coffee",
   "dependencies": {
     "cheerio": "0.12.x",
     "moment": "2.0.x"
